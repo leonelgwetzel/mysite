@@ -1,0 +1,133 @@
+/*Fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: #000;
+}
+/*Hero Styles*/
+    #hero{
+        height: 60vh;
+        background-image: url('../assets/img/hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__container{
+        color: #fff;
+        padding: 15px;
+    }
+    .hero__title{
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    .hero__subtitle{
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+    .hero__subtitle--icon{
+        font-style: normal;
+    }
+        /*Querys IPAD*/
+            @media screen and (min-width: 768px) {
+                #hero{
+                    height: 70vh;
+                    background-position: center;
+                }
+                .hero__container{
+                    padding: 15px 50px;
+                }
+            }
+        /*Querys DESKTOP*/
+            @media screen and (min-width: 992px) {
+                #hero{
+                    height: 100vh;
+                }
+                .hero__container{
+                    padding: 15px 80px;
+                }
+                .hero__title{
+                    font-size: 50px;
+                    letter-spacing: 10px;
+                }
+                .hero__subtitle{
+                    font-size: 20px;
+                }
+            }
+
+/*About Styles*/
+    #about{
+        background-color: #fff;
+        padding-bottom: 50px;
+    }
+    .about__container{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about__img{
+        width: 200px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .about__title{
+        font-weight: 200;
+    }
+    .about__text--container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about__hr{
+        margin: 20px 0;
+        width: 200px;
+        align-self: center;
+        border: 1px solid #30bac8;
+    }
+
+    /*Query IPAD*/
+        @media screen and (min-width: 768px) {
+            .about__img{
+                width: 250px;
+            }
+            .about__title{
+                font-size: 28px;
+            }
+            .about__p{
+                margin-top: 20px;
+                width: 75vw;
+                line-height: 30px;
+            }
+        }
+        /*Query DEKSTOP*/
+            @media screen and (min-width: 992px) {
+                .about__container{
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                .about__img{
+                    width: 250px;
+                }
+                .about__title{
+                    font-size: 35px;
+                }
+                .about__hr{
+                    width: 300px;
+                }
+                .about__p{
+                    font-size: 18px;
+                    width: 60vw;
+                    text-align: justify;
+                }
+            }
